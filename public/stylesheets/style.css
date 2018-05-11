@@ -2,6 +2,7 @@ body {
   padding: 80px 40px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
  /* background-image: url('/images/background2.png');*/
+	background-color: #22211f;
 }
 
 #index-search {
@@ -164,3 +165,7 @@ tr {
 	bottom: 0px;
 }
 
+.navbar-default {
+	background-color: #22211f;
+	border-color: #443838;
+}

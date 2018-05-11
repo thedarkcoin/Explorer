@@ -117,7 +117,7 @@ html
                   span.menu-text #{settings.locale.menu_richlist}
             if settings.display.markets == true
               li#markets
-                a.navbar-link.loading(href='/markets/#{settings.markets.default}') 
+                a.navbar-link.loading(href='/markets/#{settings.markets.default}')
                   span.fa.fa-line-chart
                   span.menu-text #{settings.locale.menu_markets}
             if settings.display.api == true
@@ -183,7 +183,7 @@ html
                <br>
                label#lblX1
               else
-               label#lastPrice - 
+               label#lastPrice -
                  
       .row.text-center(style='margin-top:10px;margin-bottom:20px;')
         form.form-inline(method='post', action='/search')      
@@ -191,8 +191,8 @@ html
             input.form-control(type='text', name='search', placeholder='#{settings.locale.ex_search_message}', style='min-width:80%;margin-right:5px;')
             button.btn.btn-success(type='submit') #{settings.locale.ex_search_button}
     block content
-    .navbar.navbar-default.navbar-fixed-bottom.hidden-xs
-      .col-md-4
+    //.navbar.navbar-default.navbar-fixed-bottom.hidden-xs
+      //.col-md-4
         if settings.display.twitter
           ul.nav.navbar-nav
             li.pull-left
@@ -208,12 +208,12 @@ html
             li.pull-left
               a#googleplus-icon(href="https://plus.google.com/#{settings.googleplus}", target='_blank')
                 span.glyphicon.fa.fa-google-plus
-      .col-md-4
+      //.col-md-4
         ul.nav
           li.text-center(style='margin-left:80px;margin-right:80px;')
             p(style='margin-top:15px;') 
-              a.navbar-link(href='https://github.com/iquidus/explorer', target='_blank') Powered by Iquidus Explorer 
-      span.connections
+              a.navbar-link(href='https://github.com/iquidus/explorer', target='_blank') Powered by Iquidus Explorer
+      //span.connections
         label#lblBlockcount.label.label-default -
         label#lblConnections.label.label-default -
 
